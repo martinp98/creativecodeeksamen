@@ -1,0 +1,11 @@
+#boxes {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div {
+    float: left;
+    height: 470px;
+    width: 32%;
+    padding: 0 10px;
+  }
