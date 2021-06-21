@@ -10,13 +10,12 @@
 </head>
 <body>
     <div id="column2">
-        <h2>inputfield</h2>
-        <input type="number" id="guessvalue" name="guessvalue" value="100" >
-
+        <input type="hidden" id="guessvalue" name="guessvalue">
         <input type="number" id="guess" name="guess">
-        <input type="button" id="guessbutton" value="Press me" onclick="doFunction()"> <br>
-        <input type="number" id="score" name="score">
-            
+        <br>
+        <input style="width: 208px; height: 50px;" type="button" id="sendBtn" value="Guess!" onclick="doFunction()"> 
+        <br>
+        <progress value="0" max="30" id="progressBar"></progress>
     </div>
 
     
@@ -25,11 +24,13 @@
 
 
     <div id="column2" style="float: right">
-        <h2>leaderboard</h2>
-            
+        <input type="number" id="score" name="score" value="0" disabled>
+        <input type="number" id="gamesPlayed" name="gamesPlayed" disabled>
+        <input type="hidden" id="sumOfScore" name="sumOfScore" value="0" disabled>
+        <br>
     </div>
 
     <script src="numberhandler.js"> </script>
-    <script src="index.js"></script>
+    <script src="matter.js"></script>
 </body>
 </html>
