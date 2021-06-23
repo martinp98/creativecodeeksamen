@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <div id="column2">
+        <input type="hidden" id="guessvalue" name="guessvalue">
+
+        <form class="chat-form" style="justify-content: center; position: absolute; top: 50%">
+          <input style ="width: 200px;" type="number" class="chat-input" id="guess"/>
+          <br>
+          <input style ="width: 208px;"type="submit" class="chat-submit" value="Gæt!" id="guessbutton" />
+          <br>
+          <progress style ="width: 208px;" value="0" max="30" id="progressBar"></progress>
+        </form>
+    </div>
+
+  
+
+    <div id="column2" style="float: right">
+        <input type="hidden" id="score" name="score" value="0" disabled>
+        <input type="hidden" id="sumOfScore" name="sumOfScore" value="0" disabled>
+        <br>
+            <div class="chat-window" style="border: 5; width: 100%;"></div>
+    </div>
+
+    <script src="matter.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
